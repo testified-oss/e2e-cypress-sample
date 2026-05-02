@@ -1,0 +1,16 @@
+{
+  "name": "e2e-cypress-sample",
+  "version": "1.0.0",
+  "description": "Sample project for Cypress E2E testing",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:headed": "cypress run --headed",
+    "cypress:run:chrome": "cypress run --browser chrome",
+    "cypress:run:firefox": "cypress run --browser firefox"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  }
+}
