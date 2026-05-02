@@ -1,6 +1,6 @@
-const { defineConfig } = require('cypress');
+import { defineConfig } from 'cypress';
 
-module.exports = defineConfig({
+export default defineConfig({
   e2e: {
     // Folder where end‑to‑end tests are located
     specPattern: 'cypress/e2e/**/*.cy.{js,ts}',
@@ -17,10 +17,4 @@ module.exports = defineConfig({
     // Page load timeout (ms)
     pageLoadTimeout: 60000,
   },
-  // Configure browsers for cross‑browser testing
-  browsers: [
-    { name: 'chrome', channel: 'stable' },
-    { name: 'firefox', channel: 'stable' },
-    { name: 'edge', channel: 'stable' },
-  ],
 });
