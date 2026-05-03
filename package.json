@@ -10,7 +10,7 @@
     "cypress:run:headed": "cypress run --headed",
     "cypress:run:chrome": "cypress run --browser chrome",
     "cypress:run:firefox": "cypress run --browser firefox",
-    "lint": "echo lint passed",
+    "lint": "eslint . --ext .js",
     "test": "cypress run"
   },
   "devDependencies": {
