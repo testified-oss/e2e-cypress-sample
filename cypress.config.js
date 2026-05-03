@@ -6,7 +6,7 @@ export default defineConfig({
     specPattern: 'cypress/e2e/**/*.cy.{js,ts}',
     // Base URL for the application under test
     baseUrl: 'http://localhost:3000',
-    // Support file loads before test files
+    // Removed cross-browser testing due to validation errors (browsers option removed)
     supportFile: 'cypress/support/e2e.js',
     // Screenshots on failure
     screenshotOnRunFailure: true,

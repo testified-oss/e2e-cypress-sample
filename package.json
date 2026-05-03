@@ -14,9 +14,9 @@
     "test": "cypress run"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.5",
     "cypress": "^13.6.0",
-    "eslint": "^10.3.0",
+    "eslint": "^10.0.0",
+    "globals": "^17.6.0",
     "prettier": "^3.8.3"
   }
 }
