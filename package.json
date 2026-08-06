@@ -3,14 +3,20 @@
   "version": "1.0.0",
   "description": "Sample project for Cypress E2E testing",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:run:headed": "cypress run --headed",
     "cypress:run:chrome": "cypress run --browser chrome",
-    "cypress:run:firefox": "cypress run --browser firefox"
+    "cypress:run:firefox": "cypress run --browser firefox",
+    "lint": "eslint . --ext .js",
+    "test": "cypress run"
   },
   "devDependencies": {
-    "cypress": "^13.6.0"
+    "cypress": "^15.20.0",
+    "eslint": "^10.0.0",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.3"
   }
 }
