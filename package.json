@@ -5,16 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
-    "cypress:run:headed": "cypress run --headed",
-    "cypress:run:chrome": "cypress run --browser chrome",
-    "cypress:run:firefox": "cypress run --browser firefox",
+    "cypress:open": "bun run cypress open",
+    "cypress:run": "bun run cypress run",
+    "cypress:run:headed": "bun run cypress run --headed",
+    "cypress:run:chrome": "bun run cypress run --browser chrome",
+    "cypress:run:firefox": "bun run cypress run --browser firefox",
     "lint": "eslint . --ext .js",
-    "test": "cypress run"
+    "test": "bun run cypress run"
   },
   "devDependencies": {
-    "cypress": "^15.20.0",
+    "cypress": "15.20.0",
     "eslint": "^10.0.0",
     "globals": "^17.6.0",
     "prettier": "^3.8.3"

@@ -5,7 +5,7 @@
     "": {
       "name": "e2e-cypress-sample",
       "devDependencies": {
-        "cypress": "^15.20.0",
+        "cypress": "15.20.0",
         "eslint": "^10.0.0",
         "globals": "^17.6.0",
         "prettier": "^3.8.3",
