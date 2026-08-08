@@ -12,6 +12,7 @@ jobs:
       run: |
         export PATH="$HOME/.bun/bin:$PATH"
         bun --version
-    - run: bun install
-    - run: bun run cypress run
+    - run: bun install --force
+    - run: bun add cypress@15.20.0
+    - run: bun x cypress run
     - run: npm run lint
