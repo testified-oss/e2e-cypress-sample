@@ -5,18 +5,21 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
-    "cypress:run:headed": "cypress run --headed",
-    "cypress:run:chrome": "cypress run --browser chrome",
-    "cypress:run:firefox": "cypress run --browser firefox",
+    "cypress:open": "bun x cypress@15.20.0 open",
+    "cypress:run": "bun x cypress@15.20.0 run",
+    "cypress:run:headed": "bun x cypress@15.20.0 run --headed",
+    "cypress:run:chrome": "bun x cypress@15.20.0 run --browser chrome",
+    "cypress:run:firefox": "bun x cypress@15.20.0 run --browser firefox",
     "lint": "eslint . --ext .js",
-    "test": "cypress run"
+    "test": "bun x cypress@15.20.0 run"
   },
   "devDependencies": {
-    "cypress": "^15.20.0",
     "eslint": "^10.0.0",
     "globals": "^17.6.0",
     "prettier": "^3.8.3"
+  },
+  "packageManager": "bun@latest",
+  "dependencies": {
+    "cypress": "15.20.0"
   }
 }

@@ -5,6 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - run: npm install
+    - uses: oven-sh/setup-bun@v2
+      with:
+        bun-version: latest
+    - name: Ensure Bun is in PATH
+      run: |
+        export PATH="$HOME/.bun/bin:$PATH"
+        bun --version
+    - run: bun install --force
+    - run: bun x cypress@15.20.0 run
     - run: npm run lint
-    - run: npm run test

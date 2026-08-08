@@ -4,9 +4,7 @@ export default defineConfig({
   e2e: {
     // Folder where end‑to‑end tests are located
     specPattern: 'cypress/e2e/**/*.cy.{js,ts}',
-    // Base URL for the application under test
-    baseUrl: 'http://localhost:3000',
-    // Removed cross-browser testing due to validation errors (browsers option removed)
+    // Removed baseUrl since tests use absolute URLs
     supportFile: 'cypress/support/e2e.js',
     // Screenshots on failure
     screenshotOnRunFailure: true,

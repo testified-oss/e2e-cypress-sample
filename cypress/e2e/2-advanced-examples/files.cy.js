@@ -2,7 +2,7 @@
 
 /// JSON fixture file can be loaded directly using
 // the built-in JavaScript bundler
-const requiredExample = require('../../fixtures/example')
+import example from '../../fixtures/example.json'
 
 context('Files', () => {
   beforeEach(() => {
@@ -37,11 +37,11 @@ context('Files', () => {
     // callback and can use test context object "this"
     // "this.example" was loaded in "beforeEach" function callback
     expect(this.example, 'fixture in the test context')
-      .to.deep.equal(requiredExample)
+      .to.deep.equal(example)
 
     // or use "cy.wrap" and "should('deep.equal', ...)" assertion
     cy.wrap(this.example)
-      .should('deep.equal', requiredExample)
+      .should('deep.equal', example)
   })
 
   it('cy.readFile() - read file contents', () => {
