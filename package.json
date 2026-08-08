@@ -14,10 +14,12 @@
     "test": "bun x cypress@15.20.0 run"
   },
   "devDependencies": {
-    "cypress": "15.20.0",
     "eslint": "^10.0.0",
     "globals": "^17.6.0",
     "prettier": "^3.8.3"
   },
-  "packageManager": "bun@latest"
+  "packageManager": "bun@latest",
+  "dependencies": {
+    "cypress": "15.20.0"
+  }
 }
